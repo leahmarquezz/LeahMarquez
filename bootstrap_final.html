@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- STEP 1: Change the title tag to be Your Name -->
+    <title>Leah Marquez Baking</title>
+
+    <!-- STEP 2: INSERT THE BOOTSTRAP 4.6 links here or the Bootstrap 5 CSS link here in the head and the 
+         JavaScript Bundle link right before the closing body tag like it says here 
+         https://getbootstrap.com/docs/5.1/getting-started/introduction/ -->
+         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+
+    <!--STEP 3:  ADD A DARK NAVBAR HERE WITH YOUR NAME IN THE TOP LEFT.  
+        Also, create a link in the navbar TO the HTML file that you made in the HTML assessment -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">leah</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+        </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item ">
+              <a class="nav-link" href="chicky picky.html">chick photos <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">chick fam</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                recipies
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="https://www.delish.com/cooking/g1956/best-cookies/">cookies</a>
+                <a class="dropdown-item" href="https://www.allrecipes.com/recipes/276/desserts/cakes/">cakes</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="https://www.tasteofhome.com/collection/muffin-recipes-worth-waking-up-for/">muffins</a>
+              </div>
+            <!--li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li-->
+          </ul>
+    </div>
+    </nav>
+<!-- Add a class with custom styling to this div -->
+    <div class="leahclass">
+        <h4>
+        baking made easy 4 u 
+        </h4>
+    </div>
+
+    <div class="leahclass" id="leahid">
+    <p>
+        if you like baking this is the website for you!
+    </p>
+      <!-- Add the same class as before to apply the same styling to this div.
+           ALSO add an id to this div to apply something unique. -->
+    </div>
+
+    <!-- STEP 4: CREATE A PHOTO CAROUSEL HERE -->
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" width="200">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/2ChocolateChipCookies.jpg" class="d-block w-50" alt="...">
+          </div>
+          <div class="carousel-item" width="200">
+            <img src="https://imagesvc.meredithcorp.io/v3/mm/image?q=85&c=sc&poi=face&url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_-_1200x900%2Fpublic%2F1542062283%2Fchocolate-and-cream-layer-cake-1812-cover.jpg%3Fitok%3DR_xDiShk" class="d-block w-50" alt="...">
+          </div>
+          <div class="carousel-item" width="200">
+            <img src="https://www.chatelaine.com/wp-content/uploads/2018/08/Apple-muffins-800x800.jpg" class="d-block w-50" alt="...">
+          </div>
+        </div>
+      </div>
+    <!-- STEP 5: ADD Bootstrap styling to the table below so it has striped rows 
+         and a header row and add at least three more rows. Feel free to change the text.-->
+        <h3>friend survey</h3>
+         <table class="table table-striped">
+            <thead>
+              <tr>
+                <th scope="col">name</th>
+                <th scope="col">cookie preference</th>
+                <th scope="col">coffee?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">julia</th>
+                <td>no idea</td>
+                <td>yes yes yes no doubt about it</td>
+              </tr>
+              <tr>
+                <th scope="row">sarah</th>
+                <td>chocolate chip?</td>
+                <td>sure in a frappe</td>
+              </tr>
+              <tr>
+                <th scope="row">nate</th>
+                <td>any type</td>
+                <td>absolutely not never no</td>
+              </tr>
+            </tbody>
+          </table>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    </div>  
+</body>
+</html>
