@@ -18,7 +18,7 @@ page that contains all the code you need for a new page.-->
   <div data-include="nav"></div>
   <!--Whole page container div-->
   <div class="container">
-    <form method="GET">
+    <form action="adoptee_collection.html" method="GET">
   <br>
       <h3>Share your adoptee story below!</h3>
   <br>
@@ -27,10 +27,10 @@ page that contains all the code you need for a new page.-->
   <label for="text">age:</label>
   <input password="text" name="age" placeholder="13">
   <label for="email"> email: </label>
-  <input id="email" email="text" name="secret stuff" placeholder="chickenlover22@gmail.com">
+  <input id="email" email="text" name="email" placeholder="chickenlover22@gmail.com">
   <br><br>
   <p>What age were you adopted?</p>
-  <select name="stars">
+  <select name="age">
       <option value="">select below</option>
       <option value="">0-11 months</option>
       <option value="">1 year</option>
@@ -54,16 +54,16 @@ page that contains all the code you need for a new page.-->
   </select>
   <br><br>
   <p>I am...</p>
-  <select name="stars">
-    <option value="">select below</option>
-      <option value="">an adoptee</option>
-      <option value="">an adoptive parent</option>
-      <option value="">an adoptive sibling</option>
-      <option value="">other</option>
+  <select name="type">
+    <option selected>select below</option>
+      <option value="adoptee">an adoptee</option>
+      <option value="parent">an adoptive parent</option>
+      <option value="sibling">an adoptive sibling</option>
+      <option value="other">other</option>
   </select>
   <br><br>
   <p>share story below</p>
-  <textarea name="name" rows="8" cols="80"></textarea>
+  <textarea name="story" rows="8" cols="80"></textarea>
   <br>
   <input type="submit" name="" value="submit">
   </form> 
