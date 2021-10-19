@@ -23,12 +23,12 @@ page that contains all the code you need for a new page.-->
       a story from...
     </h4>
     <br>
-    <div class="card mb-5" id="">
+    <div class="card mb-5" id="response">
       <div>
         <div>
-          <div id="typeid"></div> 
+          <h4 class="card-title fw-normal"><div id="typeid"></div></h4>
           <br>
-          <div id="storyid"></div>
+          <p class="card-text fw-light"><div id="storyid"></div></p>
       </div>
       </div>
     </div>
@@ -87,8 +87,12 @@ page that contains all the code you need for a new page.-->
       const story = urlParams.get('story');
   
       jQuery(document).ready(function() {
-        $("#typeid").html(type); 
-        $("#storyid").html(story); 
+        $("#response").hide();
+        if (type){
+          $("#response").show();
+          $("#typeid").html(type); 
+          $("#storyid").html(story); 
+        }
       });
   
     </script>
