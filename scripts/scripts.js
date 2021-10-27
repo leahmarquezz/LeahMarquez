@@ -5,6 +5,6 @@ $(function () {
       $(this).load(file)
     })
 
-    document.title = "leahs stinky site"
+    document.title = "the life of leah marquez"
 
   })
